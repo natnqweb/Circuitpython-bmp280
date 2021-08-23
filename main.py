@@ -4,7 +4,7 @@ timer1=simpletimer()
 
 import board
 #the default values of bmp bmp=BMP280(device_address=0x76,scl=board.GP5,sda=board.GP4,led_pin=board.GP25,sea_level_pressure=1017,temp_offset=-2.7)
-bmp=BMP280(scl=board.GP5,sda=board.GP4)
+bmp=BMP280(scl=board.GP5,sda=board.GP4)#raspberrypi pico SCL and SDL pins
 bmp.print_current_settings()
 class refresh:
     blink=100#ms change led state every 0.1s
